@@ -5,7 +5,7 @@ from typing import Any, Dict, List, Optional, Union
 import click
 
 from llm.config import Config, OutputType, SenderList, SenderTransformList
-from llm.helper import get_unique_senders, save_grouped_message, save_messages
+from llm.helper import get_unique_senders, save_messages
 from llm.model.message import Message, ProcessingSummary
 
 
@@ -108,7 +108,6 @@ raw_data_dir = "raw-data/telegram"
 
 
 @click.command("process.telegram", help="Process telegram group chat export")
-@click.pass_context
 @click.option(
     "--output-type",
     "-ot",
@@ -125,6 +124,7 @@ raw_data_dir = "raw-data/telegram"
     show_default=True,
     help="Split output file by persona",
 )
+@click.pass_context
 def process_telegram_exports(
     ctx: click.Context, output_type: OutputType, split_persona: bool
 ):
