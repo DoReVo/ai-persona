@@ -1,0 +1,23 @@
+# Jupyter notebook output caching
+*__pycache__/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Notebook execution outputs
+*.nbconvert.ipynb
+
+# Jupyter environments
+.env
+.venv
+env/
+venv/
+ENV/
+jupyter-env/
+
+
+llm/raw-data/**/*.json
+llm/raw-data/**/*.jsonl
+
+config_*.yaml

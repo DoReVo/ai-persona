@@ -1,0 +1,9 @@
+skip_sender:
+  - PollBot
+  - Werewolf Moderator Beta [☮]
+
+sender_transform:
+  - original: friend name
+    transform: anon name
+  - original: friend name 2
+    transform: anon name 2
