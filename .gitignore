@@ -20,4 +20,4 @@ jupyter-env/
 llm/raw-data/**/*.json
 llm/raw-data/**/*.jsonl
 
-config_*.yaml
+config-*.yaml
